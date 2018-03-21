@@ -1,0 +1,118 @@
+.contact-page_wrapper {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-page_form{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.form_header {
+    text-align: center;
+    font-family: "BigJohn";
+    color: #48bf72;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.form-input_name,
+.form-input_email,
+.form-input_text {
+    padding-left: 30px;
+    border: 2px solid #3c4955;
+    border-left: 50px solid #3c4955;
+    margin-bottom: 30px;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+}
+
+.form-input_name,
+.form-input_email {
+    width: 255px;
+    height: 50px;
+}
+
+.form-input_text {
+    width: 616px;
+    padding-top: 20px;
+    height: 225px;
+    resize: none;
+}
+
+.form-input_name {
+    float:left;
+}
+
+.form-input_email{
+    float: right;
+}
+
+.form_username, 
+.form_email,
+.form_textarea{
+    /position: relative;
+}
+
+.form_username:before, 
+.form_email:before,
+.form_textarea:before{
+    content: '';
+    position: absolute;
+    background-image: url("../img/form-sprite.png");
+    width: 23px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: -337px;
+}
+
+.form_email:before {
+    margin-left: -143px;
+    background-position: 46px;
+}
+
+.form_textarea:before {
+    margin-top: 105px;
+    margin-left: -337px;
+    background-position: 96px;
+}
+
+.form_username .triangle, 
+.form_email .triangle,
+.form_textarea .triangle
+{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 153px;
+    border: 6px solid transparent;
+    border-left: 6px solid #3c4955;
+    left: 50px;
+}
+
+.form_textarea .triangle{
+    top: 243px;
+}
+
+.form_email .triangle
+{
+    left: 412px;
+}
+
+.form-input_submit {
+    border-radius: 2px;
+    height: 50px;
+    background-color: #48bf72;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: 700px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+.form-input_submit:hover {
+    cursor:pointer;
+}   

@@ -1,0 +1,70 @@
+.foliac-logo {
+    float: left;
+    width: 174px;
+    height: 99px;
+    margin-top: 35px;
+    background: url(../img/foliac-logo.png);
+}
+
+.header_menu {
+    float: right;
+    margin-top: 80px;
+}
+
+.header_menu_item {
+    position: relative;
+    margin-left: 109px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header_menu_item .section-name {
+    display: inline-block;
+}
+
+.header_menu_item:after {
+    content: '/';
+    color: #525c65;
+    position: absolute;
+    margin-left: 54.5px;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.header_menu_item.no-slash:after {
+    display: none;
+}
+
+.header_menu_item:hover .section-name {
+    transform: scale(1.2);
+}
+
+.header_text {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header_text_line1 {
+    font-family: 'BigJohn', sans-serif;
+    font-size: 46px;
+    padding-top: 280px;
+    margin: 0;
+}
+
+.header_text_line2 {
+    font-family: 'SlimJoe', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.header_btn {
+    cursor: pointer;
+    font-size: 14px;
+    color: #48bf72;
+    padding: 12px 20px;
+    border: 2px solid #48bf72;
+}

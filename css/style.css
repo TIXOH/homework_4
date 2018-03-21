@@ -1,0 +1,68 @@
+@import url(contact-style.css);
+@import url(about-style.css);
+@import url(footer-style.css);
+@import url(header-style.css);
+@import url(portfolio-style.css);
+
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "BigJohn";
+    src: url('../fonts/bigjohn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SlimJoe";
+    src: url('../fonts/slimjoe.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.btn_cleaner {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.background-tinting {
+    background: rgba(60, 73, 85, .8);
+    height: inherit;
+
+}
+
+.main-page {
+    height: 650px;
+    background: url("../img/main-page_bgr.jpg") no-repeat center;
+}
+
+.about-page {
+    height: 500px;
+    background: url("../img/about-page_brg.jpg") no-repeat center;
+}
+
+.contact-page {
+    height: 600px;
+}
+
+.footer {
+    height: 200px;
+    background: #3c4955;
+    display: table;
+    width: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding:0 20%;
+}

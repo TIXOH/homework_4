@@ -1,0 +1,88 @@
+.copyright {
+    color:#fff;
+    font-weight: normal;
+}
+
+.copyright_link {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social {
+    display: inline-block;
+    float: right;
+}
+
+.hexagon { 
+    position: relative;
+    margin: 0 auto;
+    width: 55px;
+    height: 31.75px;
+    border-radius: 4px;
+    background: red;
+} 
+
+.hexagon:before,
+.hexagon:after { 
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+}
+
+.hexagon:before{
+    transform: rotate(60deg);
+}
+
+.hexagon:after { 
+    transform: rotate(-60deg);
+} 
+
+.social-item {
+    float: right;
+    margin-left: 40px;
+}
+
+.twitter {
+    background: #55acee;  
+}
+
+.linkedin {
+    background: #0976b4;
+}
+
+.dribbble {
+    background: #ea4c89;
+}
+
+.behance {
+    background: #1769ff;
+}
+
+.social-item_icon {
+    top: 4px;
+    left: 15px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
+
+.twitter-icon {
+    background: url("../img/social.png") 24px;
+}
+
+.linkedin-icon {
+    background: url("../img/social.png") 48px;
+}
+
+.dribbble-icon {
+    background: url("../img/social.png") 77px;
+}
+
+.behance-icon {
+    background: url("../img/social.png") 0px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foliac</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">   
+</head>
+<body>
+    <header class="main-page">
+        <div class="background-tinting">
+            <div class="wrapper">
+                <div class="header_top">
+                    <div class="header_logo">
+                        <a href="#" class="foliac-logo"></a>
+                    </div>
+                    <div class="header_menu">
+                        <nav>
+                            <a href="#" class="header_menu_item"><span class="section-name">Accueil</span></a>
+                            <a href="#portfolio-page" class="header_menu_item"><span class="section-name">Portfolio</span></a>
+                            <a href="#about-page" class="header_menu_item"><span class="section-name">About</span></a>
+                            <a href="#contact-page" class="header_menu_item no-slash"><span class="section-name">Contact</span></a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header_text">
+                    <h1 class="header_text_line1">voici votre prochain portfolio</h1>
+                    <h3 class="header_text_line2">un template psd simpleet gratuit</h3>
+                    <a href="#input-name" class="header_btn btn_cleaner">mes travaux</a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div class="portfolio-page" id="portfolio-page">
+        <div class="portfolio_filter">
+            <button class="portfolio_filter_item cleaner active">Tous les projets</button>
+            <button class="portfolio_filter_item cleaner">Webdesign</button>
+            <button class="portfolio_filter_item cleaner">UI/UX design</button>
+            <button class="portfolio_filter_item cleaner">Illustration</button>
+            <button class="portfolio_filter_item cleaner">Motion design</button>      
+        </div>
+        <div class="portfolio_items">
+            <div class="portfolio_items_left-column">
+                <div class="filter-item item1">
+                    <a href="#" class="item-about cleaner"><h3>Item1</h3>
+                    <p>Item1 about</p></a>
+                </div>
+                <div class="filter-item item2">
+                    <a href="#" class="item-about cleaner"><h3>Forest app</h3>
+                    <p>application mobile</p></a>
+                </div>
+            </div>
+            <div class="portfolio_items_right-column">
+                <div class="filter-item item3">
+                    <a href="#" class="item-about cleaner"><h3>Item3</h3>
+                    <p>Item3 about</p></a>
+                </div>
+                <div class="filter-item item4">
+                    <a href="#" class="item-about cleaner"><h3>Item4</h3>
+                    <p>Item4 about</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-page" id="about-page">
+        <div class="background-tinting">
+            <div class="wrapper">
+                <div class="info-author">
+                    <h2 class="info-author_name-author">Michel Dupont</h2>
+                    <p class="info-author_profession-author">Webdesigner, illustrateur, auteur</p>
+                    <p class="info-author_description-author">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <a href="#input-name" class="about-page_btn btn_cleaner">me contacter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-page" id="contact-page">
+        <div class="contact-page_wrapper">
+            <form action="#" method="POST" class="contact-page_form">
+                <h2 class="form_header">me contacter</h2>
+                <div class="form_top-row">
+                    <div class="form_username">
+                        <div class="user-icon"></div>
+                        <div class="triangle"></div>
+                        <input class="form-input_name" id="input-name" type="text" placeholder="Votre nom">
+                    </div>
+                    <div class="form_email">
+                        <div class="mail-icon"></div>
+                        <div class="triangle"></div>
+                        <input class="form-input_email" type="email" placeholder="Votre email">
+                    </div>
+                </div>
+                <div class="form_textarea">
+                    <div class="pencil-icon"></div>
+                    <div class="triangle"></div>
+                    <textarea class="form-input_text" placeholder="Votre message"></textarea>
+                </div>
+                <input class="form-input_submit" type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper table-cell">
+           <span class="copyright">Copyright © 2015 by beneggen - <a href="www.beneggen.fr" class="copyright_link">www.beneggen.fr</a></span>
+           <div class="social">
+                <div class="hexagon social-item behance">
+                   <a href="#" class="behance-icon social-item_icon"></a>
+               </div>
+               <div class="hexagon social-item dribbble">
+                   <a href="#" class="dribbble-icon social-item_icon"></a>
+               </div>
+               <div class="hexagon social-item linkedin">
+                   <a href="#" class="linkedin-icon social-item_icon"></a>
+               </div>
+               <div class="hexagon social-item twitter">
+                   <a href="#" class="twitter-icon social-item_icon"></a>
+               </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var btns = document.getElementsByClassName("portfolio_filter_item");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+    </script>
+</body>
+</html>

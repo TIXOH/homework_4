@@ -1,0 +1,40 @@
+.info-author {
+    margin-top: 85px;
+    color: #fff;
+    width: 570px;
+    height: inherit;
+    float: right;
+}
+
+.info-author_name-author {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.info-author_profession-author {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+
+.info-author_description-author {
+    margin: 42px 0;
+    width: 425px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.about-page_btn {
+    padding: 10px 22px;
+    border: 2px #3c4955 solid;
+    color: #3c4955;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.about-page_btn:hover {
+    border-color: #48bf72;
+    color: #48bf72;
+}
